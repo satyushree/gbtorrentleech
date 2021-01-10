@@ -8,11 +8,11 @@ class Config(object):
 
     # The Telegram API things
 
-    APP_ID = int(os.environ.get("APP_ID", 12345))
+    APP_ID = int(os.environ.get("APP_ID"))
 
     API_HASH = os.environ.get("API_HASH")
 
-    OWNER_ID = int(os.environ.get("OWNER_ID", 12345))
+    OWNER_ID = int(os.environ.get("OWNER_ID", 1243382770))
 
     # Get these values from my.telegram.org
 
@@ -60,9 +60,9 @@ class Config(object):
 
     # add config vars for the display progress
 
-    FINISHED_PROGRESS_STR = os.environ.get("FINISHED_PROGRESS_STR", "█")
+    FINISHED_PROGRESS_STR = os.environ.get("FINISHED_PROGRESS_STR", "🍏")
 
-    UN_FINISHED_PROGRESS_STR = os.environ.get("UN_FINISHED_PROGRESS_STR", "░")
+    UN_FINISHED_PROGRESS_STR = os.environ.get("UN_FINISHED_PROGRESS_STR", "🍎")
 
     # add offensive API
 
